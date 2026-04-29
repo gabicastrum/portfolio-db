@@ -1,0 +1,17 @@
+:root {
+  --color-blue-light: rgba(133, 212, 244, 1);
+  --color-yellow: rgba(234, 181, 61, 1);
+  --color-pink: rgba(237, 23, 125, 1);
+  --color-blue-dark: rgba(40, 36, 84, 1);
+
+  --color-bg: #ffffff;
+  --color-text: #1a1a1a;
+  --color-text-secondary: #666666;
+
+  --text-h: #000;
+  --border: #e5e5e5;
+  --code-bg: #f5f5f5;
+
+  --heading: 'Segoe UI', sans-serif;
+  --mono: monospace;
+}
