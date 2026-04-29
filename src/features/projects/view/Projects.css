@@ -1,0 +1,27 @@
+.projects-page .portfolio-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.projects-page .page-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-blue-dark);
+  text-align: center;
+  margin: 4rem;
+}
+
+.projects-page .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.projects-page .pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 3rem;
+}
