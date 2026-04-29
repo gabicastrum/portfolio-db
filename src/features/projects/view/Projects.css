@@ -1,27 +1,43 @@
 .projects-page .portfolio-container {
   max-width: 1250px;
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: var(--space-8) var(--space-6);
 }
 
 .projects-page .page-title {
-  font-size: 2.5rem;
-  font-weight: 800;
+  font-size: var(--text-4xl);
+  font-weight: var(--font-extrabold);
   color: var(--color-blue-dark);
   text-align: center;
-  margin: 4rem;
+  margin: var(--space-12);
 }
 
 .projects-page .projects-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  gap: var(--space-6);
   align-items: stretch;
 }
 
 .projects-page .pagination {
   display: flex;
   justify-content: center;
-  gap: 8px;
-  margin-top: 3rem;
+  gap: var(--space-2);
+  margin-top: var(--space-12);
+}
+
+@media (max-width: 1024px) {
+  .projects-page .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-page .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-page .page-title {
+    font-size: var(--text-3xl);
+  }
 }

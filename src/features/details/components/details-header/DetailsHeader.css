@@ -2,42 +2,38 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
   text-align: center;
 }
 
 .details-header h1 {
   margin: 0;
-  font-size: 2.5rem;
-  font-weight: 800;
+  font-size: var(--text-4xl);
+  font-weight: var(--font-extrabold);
   color: var(--color-blue-dark);
 }
 
 .download-button {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-
-  padding: 1rem 2rem;
-  border-radius: 8px;
+  gap: var(--space-2);
+  padding: var(--space-4) var(--space-8);
+  border-radius: var(--radius-lg);
   border: none;
-
   background: var(--color-pink);
   color: white;
-
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
   text-decoration: none;
   cursor: pointer;
-
-  transition: all 0.3s ease;
+  transition: all var(--transition-base);
 }
 
 .download-button:hover {
   background: var(--color-blue-dark);
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow-lg);
 }
 
 .download-button:active {
@@ -52,15 +48,15 @@
 
 @media (max-width: 768px) {
   .details-header {
-    gap: 1rem;
+    gap: var(--space-4);
   }
 
   .details-header h1 {
-    font-size: 1.8rem;
+    font-size: var(--text-3xl);
   }
 
   .download-button {
-    padding: 0.8rem 1.5rem;
-    font-size: 0.95rem;
+    padding: var(--space-3) var(--space-6);
+    font-size: var(--text-sm);
   }
 }
