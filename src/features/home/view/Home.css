@@ -37,6 +37,7 @@
 .hero-image {
   display: flex;
   justify-content: center;
+  margin: var(--space-12) 0;
 }
 
 .profile-photo {
@@ -91,7 +92,7 @@
 
 .skills-section h3 {
   font-size: var(--text-3xl);
-  margin-bottom: var(--space-8);
+  margin-bottom: var(--space-4);
   color: var(--color-blue-dark);
   font-weight: var(--font-bold);
   margin-top: 0;
@@ -101,6 +102,42 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space-4);
+}
+.skills-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.skills-title-hover-area {
+  position: relative;
+  display: inline-block;
+  cursor: default;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-hint {
+  font-size: 0.75rem;
+  color: #fff;
+  background: #1e1e1e;
+  padding: 6px 10px;
+  border-radius: 6px;
+  width: fit-content;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: all 0.25s ease;
+  pointer-events: none;
+  position: relative;
+  margin-top: 0.4rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+.skills-title-hover-area:hover .skills-hint,
+.skills-title-wrapper.show .skills-hint {
+  opacity: 0.9;
+  transform: translateY(0);
 }
 
 @media (max-width: 768px) {

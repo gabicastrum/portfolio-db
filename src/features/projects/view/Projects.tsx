@@ -3,7 +3,6 @@ import { ProjectCard } from "../components/project-card/ProjectCard";
 import { useProjectsViewModel } from "../useProjectsViewModel";
 
 import "./Projects.css";
-import { Loading } from "@/shared/components/Loading/Loading";
 
 
 export function Projects() {
@@ -12,16 +11,7 @@ export function Projects() {
     currentPage,
     totalPages,
     setCurrentPage,
-    isLoading = false,
   } = useProjectsViewModel();
-
-  if (isLoading) {
-    return (
-      <div className="projects-page">
-        <Loading message="Carregando projetos..." />
-      </div>
-    );
-  }
   
   return (
       <div className="projects-page">

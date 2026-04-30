@@ -5,8 +5,20 @@ import { SKILLS } from '@/features/home/model/skills';
 import './Home.css';
 import profile from '@/assets/images/img-perfil.png';
 import { ImageWithFallback } from '@/shared/components/ImageWithFallback/ImageWithFallback';
+import { useEffect, useState } from 'react';
+
 
 export function Home() {
+  const [showHint, setShowHint] = useState(true);
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowHint(false);
+    }, 3000);
+  
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="portfolio-container">
       <section className="hero">
@@ -38,17 +50,23 @@ export function Home() {
         </div>
 
         <div className="skills-section">
-          <h3>{HOME_CONTENT.skills.title}</h3>
-
+          <div className={`skills-title-wrapper ${showHint ? 'show' : ''}`}>
+            <div className="skills-title-hover-area">
+              <h3>{HOME_CONTENT.skills.title}</h3>
+              <p className="skills-hint">
+                Passe o mouse sobre os níveis para ver o significado de cada pontuação.
+              </p>
+            </div>
+          </div>
           <div className="skills-grid">
             <div>
-              {SKILLS.slice(0, 4).map((skill, index) => (
+              {SKILLS.slice(0, 9).map((skill, index) => (
                 <SkillBar key={index} name={skill.name} level={skill.level} />
               ))}
             </div>
 
             <div>
-              {SKILLS.slice(4).map((skill, index) => (
+              {SKILLS.slice(9, 18).map((skill, index) => (
                 <SkillBar key={index} name={skill.name} level={skill.level} />
               ))}
             </div>
