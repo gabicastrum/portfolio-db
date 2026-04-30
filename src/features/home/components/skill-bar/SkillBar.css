@@ -23,8 +23,8 @@
 }
 
 .skill-dot {
-  width: 14px;
-  height: 14px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background: #d0d0d0;
   transition: background-color var(--transition-base);

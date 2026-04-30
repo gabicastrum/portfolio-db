@@ -11,7 +11,7 @@ describe('Header Component', () => {
       </BrowserRouter>
     )
 
-    const homeLink = screen.getByText('Home')
+    const homeLink = screen.getByText('Sobre')
     const curricuoLink = screen.getByText('Currículo')
     const projectsLink = screen.getByText('Projetos')
 

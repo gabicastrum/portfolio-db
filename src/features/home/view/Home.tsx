@@ -1,4 +1,3 @@
-import { SkillBar } from '@/features/home/components/skill-bar/SkillBar'
 import { HOME_CONTENT } from '@/features/home/model/homeContent'
 import { SKILLS } from '@/features/home/model/skills'
 
@@ -6,9 +5,12 @@ import './Home.css'
 import profile from '@/assets/images/img-perfil.png'
 import { ImageWithFallback } from '@/shared/components/ImageWithFallback/ImageWithFallback'
 import { useEffect, useState } from 'react'
+import { SkillsColumn } from '../components/skills-column/SkillsColumn'
+import type { SkillCategory } from '../model/types'
 
 export function Home() {
   const [showHint, setShowHint] = useState(true)
+  const CATEGORIES: SkillCategory[] = ['backend', 'frontend', 'ferramentas']
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -58,18 +60,14 @@ export function Home() {
             </div>
           </div>
           <div className="skills-grid">
-            <div>
-              {SKILLS.slice(0, 9).map((skill, index) => (
-                <SkillBar key={index} name={skill.name} level={skill.level} />
-              ))}
-            </div>
-
-            <div>
-              {SKILLS.slice(9, 18).map((skill, index) => (
-                <SkillBar key={index} name={skill.name} level={skill.level} />
-              ))}
-            </div>
-          </div>
+            {CATEGORIES.map((cat) => (
+    <SkillsColumn
+      key={cat}
+      category={cat}
+      skills={SKILLS.filter((s) => s.category === cat)}
+    />
+  ))}
+</div>
         </div>
       </section>
     </div>

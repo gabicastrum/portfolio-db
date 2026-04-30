@@ -20,7 +20,7 @@ export const Header = () => {
 
       <nav className="nav-links">
         <Link to="/" className={`nav-item ${isActive('/') ? 'active' : ''}`}>
-          Home
+          Sobre
         </Link>
 
         <Link to="/details" className={`nav-item ${isActive('/details') ? 'active' : ''}`}>

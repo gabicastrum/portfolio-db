@@ -106,9 +106,23 @@
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--space-4);
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  gap: var(--space-8) var(--space-6);
+  align-items: start;
 }
+
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .skills-title-wrapper {
   display: flex;
   flex-direction: column;
