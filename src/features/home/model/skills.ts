@@ -1,4 +1,4 @@
-import { type Skill } from './types';
+import { type Skill } from './types'
 
 export const SKILLS: Skill[] = [
   { name: 'Java', level: 4 },
@@ -19,4 +19,4 @@ export const SKILLS: Skill[] = [
   { name: 'Jasmine / Karma', level: 3 },
   { name: 'Microservices', level: 2 },
   { name: 'Message Queues', level: 1 },
-];
+]

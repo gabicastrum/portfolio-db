@@ -1,9 +1,8 @@
-import './ProjectCard.css';
-import githubIcon from '@/assets/icons/github.svg';
-import { ImageWithFallback } from '@/shared/components/ImageWithFallback/ImageWithFallback';
-import type { ProjectCardProps } from '../../model/projects.types';
-import defaultImage from '@/assets/images/logo-db.png';
-
+import './ProjectCard.css'
+import githubIcon from '@/assets/icons/github.svg'
+import { ImageWithFallback } from '@/shared/components/ImageWithFallback/ImageWithFallback'
+import type { ProjectCardProps } from '../../model/projects.types'
+import defaultImage from '@/assets/images/logo-db.png'
 
 export function ProjectCard({
   title,
@@ -11,7 +10,7 @@ export function ProjectCard({
   tags,
   image,
   githubUrl,
-  liveUrl
+  liveUrl,
 }: ProjectCardProps) {
   return (
     <div className="project-card">
@@ -20,13 +19,7 @@ export function ProjectCard({
           src={image}
           alt={title}
           className="project-image"
-          fallback={
-            <img
-            src={defaultImage}
-            alt="Imagem padrão"
-            className="project-image"
-            />
-          }
+          fallback={<img src={defaultImage} alt="Imagem padrão" className="project-image" />}
         />
       )}
 
@@ -69,5 +62,5 @@ export function ProjectCard({
         </div>
       </div>
     </div>
-  );
+  )
 }

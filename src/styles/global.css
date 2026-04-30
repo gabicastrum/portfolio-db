@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   overflow-x: hidden;
   width: 100%;
@@ -38,7 +39,8 @@ body {
   flex-direction: column;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: var(--font-heading);
   font-weight: var(--font-semibold);
   color: var(--color-text);

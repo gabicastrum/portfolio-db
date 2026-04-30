@@ -1,23 +1,22 @@
-import { SkillBar } from '@/features/home/components/skill-bar/SkillBar';
-import { HOME_CONTENT } from '@/features/home/model/homeContent';
-import { SKILLS } from '@/features/home/model/skills';
+import { SkillBar } from '@/features/home/components/skill-bar/SkillBar'
+import { HOME_CONTENT } from '@/features/home/model/homeContent'
+import { SKILLS } from '@/features/home/model/skills'
 
-import './Home.css';
-import profile from '@/assets/images/img-perfil.png';
-import { ImageWithFallback } from '@/shared/components/ImageWithFallback/ImageWithFallback';
-import { useEffect, useState } from 'react';
-
+import './Home.css'
+import profile from '@/assets/images/img-perfil.png'
+import { ImageWithFallback } from '@/shared/components/ImageWithFallback/ImageWithFallback'
+import { useEffect, useState } from 'react'
 
 export function Home() {
-  const [showHint, setShowHint] = useState(true);
-  
+  const [showHint, setShowHint] = useState(true)
+
   useEffect(() => {
     const timer = setTimeout(() => {
-      setShowHint(false);
-    }, 2000);
-  
-    return () => clearTimeout(timer);
-  }, []);
+      setShowHint(false)
+    }, 2000)
+
+    return () => clearTimeout(timer)
+  }, [])
 
   return (
     <div className="portfolio-container">
@@ -74,5 +73,5 @@ export function Home() {
         </div>
       </section>
     </div>
-  );
+  )
 }

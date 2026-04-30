@@ -1,8 +1,8 @@
-import './SkillBar.css';
+import './SkillBar.css'
 
 interface SkillBarProps {
-  name: string;
-  level: number;
+  name: string
+  level: number
 }
 
 const levelDescriptions = {
@@ -11,11 +11,11 @@ const levelDescriptions = {
   3: 'Atuação prática: desenvolve funcionalidades completas com autonomia no escopo do dia a dia e participa ativamente de projetos.',
   4: 'Atuação sólida em ambiente real: resolve problemas mais complexos, aplica boas práticas e contribui de forma consistente em sistemas em produção.',
   5: 'Atuação de referência em contexto de equipe: conduz práticas técnicas dentro do time, apoia decisões e facilita colaboração em atividades de desenvolvimento.',
-};
+}
 
 export function SkillBar({ name, level }: SkillBarProps) {
-  const normalizedLevel = Math.min(5, Math.max(1, level));
-  
+  const normalizedLevel = Math.min(5, Math.max(1, level))
+
   return (
     <div className="skill-item">
       <div className="skill-content">
@@ -36,5 +36,5 @@ export function SkillBar({ name, level }: SkillBarProps) {
         </div>
       </div>
     </div>
-  );
+  )
 }

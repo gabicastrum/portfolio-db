@@ -62,7 +62,9 @@
   pointer-events: none;
   opacity: 0;
   visibility: hidden;
-  transition: opacity var(--transition-base), visibility var(--transition-base);
+  transition:
+    opacity var(--transition-base),
+    visibility var(--transition-base);
 }
 
 .skill-dot.tooltip-trigger:hover .tooltip-content {

@@ -9,7 +9,9 @@
   font-size: var(--text-sm);
   font-weight: var(--font-medium);
   box-shadow: var(--shadow-lg);
-  animation: toastIn var(--transition-base), toastOut var(--transition-base) 2.7s forwards;
+  animation:
+    toastIn var(--transition-base),
+    toastOut var(--transition-base) 2.7s forwards;
   z-index: 1000;
 }
 

@@ -5,10 +5,10 @@ import { Route, Routes } from 'react-router-dom'
 
 export function AppRoutes() {
   return (
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/details" element={<Details />} />
-        <Route path="/projects" element={<Projects />} />
-      </Routes>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/details" element={<Details />} />
+      <Route path="/projects" element={<Projects />} />
+    </Routes>
   )
 }

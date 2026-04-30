@@ -19,24 +19,15 @@ export const Header = () => {
       </Link>
 
       <nav className="nav-links">
-        <Link
-          to="/"
-          className={`nav-item ${isActive('/') ? 'active' : ''}`}
-        >
+        <Link to="/" className={`nav-item ${isActive('/') ? 'active' : ''}`}>
           Home
         </Link>
 
-        <Link
-          to="/details"
-          className={`nav-item ${isActive('/details') ? 'active' : ''}`}
-        >
+        <Link to="/details" className={`nav-item ${isActive('/details') ? 'active' : ''}`}>
           Currículo
         </Link>
 
-        <Link
-          to="/projects"
-          className={`nav-item ${isActive('/projects') ? 'active' : ''}`}
-        >
+        <Link to="/projects" className={`nav-item ${isActive('/projects') ? 'active' : ''}`}>
           Projetos
         </Link>
       </nav>
@@ -46,14 +37,17 @@ export const Header = () => {
           <img src={githubIcon} alt="Github" className="social-icon" />
         </a>
 
-        <a href="https://www.linkedin.com/in/gabrieladecastrolaurindo/" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.linkedin.com/in/gabrieladecastrolaurindo/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img src={linkedinIcon} alt="Linkedin" className="social-icon" />
         </a>
 
         <CopyEmailButton email="gabriela.laurindo@db.tec.br">
           <img src={mailIcon} alt="Copiar email" className="social-icon" />
         </CopyEmailButton>
-
       </div>
     </header>
   )

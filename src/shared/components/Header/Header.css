@@ -81,7 +81,9 @@
 
 .social-icons a {
   color: var(--color-text);
-  transition: color var(--transition-base), transform var(--transition-base);
+  transition:
+    color var(--transition-base),
+    transform var(--transition-base);
   display: flex;
   align-items: center;
   text-decoration: none;

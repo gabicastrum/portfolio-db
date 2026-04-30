@@ -1,9 +1,9 @@
-import './DetailsHeader.css';
+import './DetailsHeader.css'
 
 interface DetailsHeaderProps {
-  title: string;
-  pdf: string;
-  fileName: string;
+  title: string
+  pdf: string
+  fileName: string
 }
 
 export function DetailsHeader({ title, pdf, fileName }: DetailsHeaderProps) {
@@ -25,9 +25,8 @@ export function DetailsHeader({ title, pdf, fileName }: DetailsHeaderProps) {
           <polyline points="7 10 12 15 17 10"></polyline>
           <line x1="12" y1="15" x2="12" y2="3"></line>
         </svg>
-
         Baixar Currículo
       </a>
     </div>
-  );
+  )
 }

@@ -1,8 +1,8 @@
-import './PdfViewer.css';
+import './PdfViewer.css'
 
 interface PdfViewerProps {
-  src: string;
-  title: string;
+  src: string
+  title: string
 }
 
 export function PdfViewer({ src, title }: PdfViewerProps) {
@@ -15,5 +15,5 @@ export function PdfViewer({ src, title }: PdfViewerProps) {
         </a>
       </p>
     </iframe>
-  );
+  )
 }

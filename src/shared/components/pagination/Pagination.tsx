@@ -1,23 +1,20 @@
-import './Pagination.css';
+import './Pagination.css'
 
 type Props = {
-  currentPage: number;
-  totalPages: number;
-  onPageChange: (page: number) => void;
-};
+  currentPage: number
+  totalPages: number
+  onPageChange: (page: number) => void
+}
 
 export function Pagination({ currentPage, totalPages, onPageChange }: Props) {
   return (
     <div className="pagination">
-      <button
-        onClick={() => onPageChange(currentPage - 1)}
-        disabled={currentPage === 1}
-      >
+      <button onClick={() => onPageChange(currentPage - 1)} disabled={currentPage === 1}>
         ←
       </button>
 
       {Array.from({ length: totalPages }, (_, index) => {
-        const page = index + 1;
+        const page = index + 1
 
         return (
           <button
@@ -27,15 +24,12 @@ export function Pagination({ currentPage, totalPages, onPageChange }: Props) {
           >
             {page}
           </button>
-        );
+        )
       })}
 
-      <button
-        onClick={() => onPageChange(currentPage + 1)}
-        disabled={currentPage === totalPages}
-      >
+      <button onClick={() => onPageChange(currentPage + 1)} disabled={currentPage === totalPages}>
         →
       </button>
     </div>
-  );
+  )
 }

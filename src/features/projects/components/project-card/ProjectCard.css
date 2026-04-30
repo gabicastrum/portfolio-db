@@ -3,7 +3,9 @@
   overflow: hidden;
   background: var(--color-card-bg);
   box-shadow: var(--shadow-md);
-  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
   display: flex;
   flex-direction: column;
   height: 100%;

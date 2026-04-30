@@ -18,4 +18,4 @@ export const HOME_CONTENT = {
   skills: {
     title: 'Habilidades',
   },
-};
+}

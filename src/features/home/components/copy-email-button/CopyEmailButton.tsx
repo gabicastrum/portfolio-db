@@ -1,27 +1,27 @@
-import { useState } from 'react';
-import { Toast } from '@/shared/components/Toast/Toast';
-import './CopyEmailButton.css';
+import { useState } from 'react'
+import { Toast } from '@/shared/components/Toast/Toast'
+import './CopyEmailButton.css'
 
 interface CopyEmailButtonProps {
-  email: string;
-  children: React.ReactNode;
+  email: string
+  children: React.ReactNode
 }
 
 export function CopyEmailButton({ email, children }: CopyEmailButtonProps) {
-  const [showToast, setShowToast] = useState(false);
+  const [showToast, setShowToast] = useState(false)
 
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText(email);
-      setShowToast(true);
+      await navigator.clipboard.writeText(email)
+      setShowToast(true)
 
       setTimeout(() => {
-        setShowToast(false);
-      }, 3000);
+        setShowToast(false)
+      }, 3000)
     } catch (error) {
-      console.error('Erro ao copiar', error);
+      console.error('Erro ao copiar', error)
     }
-  };
+  }
 
   return (
     <>
@@ -31,5 +31,5 @@ export function CopyEmailButton({ email, children }: CopyEmailButtonProps) {
 
       {showToast && <Toast message="Email copiado com sucesso!" />}
     </>
-  );
+  )
 }

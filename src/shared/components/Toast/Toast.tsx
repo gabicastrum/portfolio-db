@@ -1,9 +1,9 @@
-import './Toast.css';
+import './Toast.css'
 
 interface ToastProps {
-  message: string;
+  message: string
 }
 
 export function Toast({ message }: ToastProps) {
-  return <div className="toast">{message}</div>;
+  return <div className="toast">{message}</div>
 }

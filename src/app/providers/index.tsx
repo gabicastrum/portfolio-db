@@ -5,9 +5,5 @@ type Props = {
 }
 
 export function AppProviders({ children }: Props) {
-  return (
-    <>
-      {children}
-    </>
-  )
+  return <>{children}</>
 }
