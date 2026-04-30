@@ -1,73 +1,65 @@
-# React + TypeScript + Vite
+# Portfólio < db >
+> Este é o meu portfólio que desenvolvi seguindo os padrões da formação de dbservantes.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Acesse aqui o meu portfólio](https://gabrielacastro-portfolio-db.onrender.com)
 
-Currently, two official plugins are available:
+_⚠️ A aplicação pode levar alguns segundos para responder na primeira requisição devido ao cold start da plataforma._
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Tecnologia | Descrição |
+|---|---|
+| ⚛️ **React** | Biblioteca principal para construção de interfaces |
+| 🟦 **TypeScript** | Tipagem estática para maior segurança no código |
+| 🧪 **Jest + Testing Library** | Testes unitários e de componentes |
+| 🔍 **ESLint + Prettier** | Linting e formatação de código |
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🖥️ Funcionalidades por pages
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Sobre**: página home com apresentação, descrição sobre mim e habilidades descritas com níves de conhecimento e prática (deslize o mouse nos níveis).
+- **Currículo**: página para visualização do meu currículo em pdf e botão para baixar.
+- **Projetos**: página dedicada aos meus projetos, é possível visualizar descrição, stacks principais e links para direcionamento. 
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## ⚙️ Como rodar este projeto localmente
+
+### Pré-requisitos
+
+- Node.js 20+
+- npm ou yarn
+
+### Instalação
+
+```bash
+# Clone o repositório
+git clone https://github.com/gabicastrum/portfolio-db.git
+
+# Acesse a pasta do projeto
+cd portfolio-db
+
+# Instale as dependências
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Scripts Disponíveis
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+# Inicia o servidor de desenvolvimento
+npm run dev
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+# Executa os testes
+npm run test
+
+Com o servidor de desenvolvimento rodando, acesse:
+
+http://localhost:5174/
 ```
+
+---
+
+<p align="center">Feito com apoio de ☕ por <strong>👩‍💻 Gabriela de Castro Laurindo</strong></p>
