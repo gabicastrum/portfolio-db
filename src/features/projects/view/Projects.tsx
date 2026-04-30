@@ -16,7 +16,6 @@ export function Projects() {
             <ProjectCard key={project.id} {...project} />
           ))}
         </div>
-
       </div>
     </div>
   )

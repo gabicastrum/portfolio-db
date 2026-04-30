@@ -3,9 +3,9 @@ import { type Skill, type SkillCategory } from '@/features/home/model/types'
 import './SkillsColumn.css'
 
 const COLUMN_LABELS: Record<SkillCategory, string> = {
-  backend:      'Back-end',
-  frontend:     'Front-end',
-  ferramentas:  'Ferramentas & Práticas',
+  backend: 'Back-end',
+  frontend: 'Front-end',
+  ferramentas: 'Ferramentas & Práticas',
 }
 
 interface SkillsColumnProps {

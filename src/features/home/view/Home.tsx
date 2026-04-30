@@ -61,13 +61,13 @@ export function Home() {
           </div>
           <div className="skills-grid">
             {CATEGORIES.map((cat) => (
-    <SkillsColumn
-      key={cat}
-      category={cat}
-      skills={SKILLS.filter((s) => s.category === cat)}
-    />
-  ))}
-</div>
+              <SkillsColumn
+                key={cat}
+                category={cat}
+                skills={SKILLS.filter((s) => s.category === cat)}
+              />
+            ))}
+          </div>
         </div>
       </section>
     </div>
