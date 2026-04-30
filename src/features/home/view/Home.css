@@ -11,6 +11,12 @@
   padding: var(--space-8) 5%;
 }
 
+.hero-content {
+  max-width: none;
+  margin: 65px;
+  margin-bottom: 1px;
+}
+
 .hero-content h1 {
   font-size: var(--text-4xl);
   color: var(--color-blue-dark);
@@ -26,7 +32,7 @@
 }
 
 .hero-content p {
-  font-size: var(--text-lg);
+  font-size: var(--text-3xl);
   color: var(--color-text-secondary);
   margin-bottom: var(--space-8);
   font-weight: var(--font-normal);
@@ -71,14 +77,14 @@
 }
 
 .about-content h3 {
-  font-size: var(--text-3xl);
+  font-size: var(--text-4xl);
   margin-bottom: var(--space-6);
   font-weight: var(--font-bold);
   color: var(--color-blue-dark);
 }
 
 .about-content p {
-  font-size: var(--text-base);
+  font-size: var(--text-lg);
   line-height: 1.8;
   margin-bottom: var(--space-4);
 }
@@ -91,7 +97,7 @@
 }
 
 .skills-section h3 {
-  font-size: var(--text-3xl);
+  font-size: var(--text-4xl);
   margin-bottom: var(--space-4);
   color: var(--color-blue-dark);
   font-weight: var(--font-bold);
@@ -172,10 +178,10 @@
   }
 
   .about-content h3 {
-    font-size: var(--text-2xl);
+    font-size: var(--text-4xl);
   }
 
   .skills-section h3 {
-    font-size: var(--text-2xl);
+    font-size: var(--text-4xl);
   }
 }

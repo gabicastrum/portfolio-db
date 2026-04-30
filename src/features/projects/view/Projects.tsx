@@ -1,4 +1,4 @@
-import { Pagination } from "@/shared/components/pagination/Pagination";
+import { Pagination } from "@/shared/components/Pagination/Pagination";
 import { ProjectCard } from "../components/project-card/ProjectCard";
 import { useProjectsViewModel } from "../useProjectsViewModel";
 

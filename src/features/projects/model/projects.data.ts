@@ -1,109 +1,42 @@
 import type { ProjectCardProps } from "./projects.types";
 
-// TODO: Ajustar os dados dos projetos para refletir os projetos reais 
 export const projects: ProjectCardProps[] = [
   {
     id: "1",
-    title: 'Sistema de Gerenciamento de Tarefas',
+    title: 'PetControl',
     description:
-      'Aplicação full stack com autenticação, CRUD completo e dashboard de produtividade.',
-    tags: ['Angular', 'Java', 'Spring Boot', 'PostgreSQL'],
-    githubUrl: 'https://github.com/gabrielalaurindo/task-manager',
-    liveUrl: 'https://task-manager-demo.com',
-    image: '/images/task-manager.png',
+      'Aplicação full stack completa para gerenciamento de pets para adoção sendo desenvolvida em time',
+    tags: ['Next.js', 'Spring Boot', 'JUnit', 'Jest', 'PostgreSQL', 'Docker Compose', 'shadcn/ui'],
+    githubUrl: 'https://github.com/orgs/db-petcontrol/repositories',
+    liveUrl: 'https://petcontrol-app.onrender.com/',
+    image: 'src/assets/images/petcontrol.png',
   },
   {
     id: "2",
-    title: 'API de E-commerce',
+    title: 'TimeTrix - Gerenciador de Tarefas',
     description:
-      'API REST robusta para e-commerce com sistema de pagamentos, controle de estoque e gerenciamento de pedidos.',
-    tags: ['Java', 'Spring Boot', 'MySQL', 'JUnit'],
-    githubUrl: 'https://github.com/gabrielalaurindo/ecommerce-api',
-    image: '/images/ecommerce-api.png',
+      'Interface web para gerenciamento de tarefas em um to-do list, consumindo a API REST desenvolvida em Spring Boot',
+    tags: [ 'Next.js', 'Tailwind CSS', 'shadcn/ui', 'Jest', 'React Testing Library', 'Java' ],
+    githubUrl: 'https://github.com/gabicastrum/gerenciador-tarefas-app',
+    image: 'src/assets/images/timetrix.png',
   },
   {
     id: "3",
-    title: 'Dashboard de Testes Automatizados',
+    title: 'Desafio React Dragons App',
     description:
-      'Interface para análise de resultados de testes automatizados com métricas e relatórios detalhados.',
-    tags: ['React', 'TypeScript', 'Recharts', 'Tailwind'],
-    githubUrl: 'https://github.com/gabrielalaurindo/test-dashboard',
-    liveUrl: 'https://test-dashboard-demo.com',
-    image: '/images/dashboard.png',
+      'Aplicação frontend desenvolvida em React para gerenciamento de dragões, consumindo uma API com as operações CRUD',
+    tags: ['React', 'React Hooks', 'HTML & CSS', 'Vite'],
+    githubUrl: 'https://github.com/gabicastrum/dragons-app',
+    liveUrl: 'https://dragons-app-gold.vercel.app/',
+    image: 'src/assets/images/dragons-app.png',
   },
   {
     id: "4",
-    title: 'Biblioteca de Componentes',
+    title: 'DBCommerce',
     description:
-      'Sistema de design com componentes reutilizáveis e documentação interativa para acelerar desenvolvimento.',
-    tags: ['React', 'TypeScript', 'Storybook', 'CSS Modules'],
-    githubUrl: 'https://github.com/gabrielalaurindo/component-library',
-    image: '/images/component-library.png',
-  },
-  {
-    id: "5",
-    title: 'Automação de Testes E2E',
-    description:
-      'Framework customizado para testes end-to-end com geração automática de relatórios e integração CI/CD.',
-    tags: ['Selenium', 'Java', 'TestNG', 'Jenkins'],
-    githubUrl: 'https://github.com/gabrielalaurindo/e2e-automation',
-    image: '/images/e2e-automation.png',
-  },
-  {
-    id: "6",
-    title: 'Aplicativo de Finanças Pessoais',
-    description:
-      'App para controle financeiro pessoal com categorização automática, gráficos e metas de economia.',
-    tags: ['Angular', 'TypeScript', 'Chart.js', 'LocalStorage'],
-    githubUrl: 'https://github.com/gabrielalaurindo/finance-app',
-    liveUrl: 'https://finance-app-demo.com',
-    image: '/images/finance-app.png',
-  },
-  {
-    id: "7",
-    title: 'API de E-commerce',
-    description:
-      'API REST robusta para e-commerce com sistema de pagamentos, controle de estoque e gerenciamento de pedidos.',
-    tags: ['Java', 'Spring Boot', 'MySQL', 'JUnit'],
-    githubUrl: 'https://github.com/gabrielalaurindo/ecommerce-api',
-    image: '/images/ecommerce-api.png',
-  },
-  {
-    id: "8",
-    title: 'Dashboard de Testes Automatizados',
-    description:
-      'Interface para análise de resultados de testes automatizados com métricas e relatórios detalhados.',
-    tags: ['React', 'TypeScript', 'Recharts', 'Tailwind'],
-    githubUrl: 'https://github.com/gabrielalaurindo/test-dashboard',
-    liveUrl: 'https://test-dashboard-demo.com',
-    image: '/images/dashboard.png',
-  },
-  {
-    id: "9",
-    title: 'Biblioteca de Componentes',
-    description:
-      'Sistema de design com componentes reutilizáveis e documentação interativa para acelerar desenvolvimento.',
-    tags: ['React', 'TypeScript', 'Storybook', 'CSS Modules'],
-    githubUrl: 'https://github.com/gabrielalaurindo/component-library',
-    image: '/images/component-library.png',
-  },
-  {
-    id: "10",
-    title: 'Automação de Testes E2E',
-    description:
-      'Framework customizado para testes end-to-end com geração automática de relatórios e integração CI/CD.',
-    tags: ['Selenium', 'Java', 'TestNG', 'Jenkins'],
-    githubUrl: 'https://github.com/gabrielalaurindo/e2e-automation',
-    image: '/images/e2e-automation.png',
-  },
-  {
-    id: "11",
-    title: 'Aplicativo de Finanças Pessoais',
-    description:
-      'App para controle financeiro pessoal com categorização automática, gráficos e metas de economia.',
-    tags: ['Angular', 'TypeScript', 'Chart.js', 'LocalStorage'],
-    githubUrl: 'https://github.com/gabrielalaurindo/finance-app',
-    liveUrl: 'https://finance-app-demo.com',
-    image: '/images/finance-app.png',
+      'Aplicação full stack desenvolvida em grupo para uso por colaboradores dbservantes',
+    tags: ['Angular', 'Java', 'Docker', 'Docker Compose', 'PostgreSQL', 'JUnit', 'Jasmine/Karma' ],
+    liveUrl: 'https://dbcommerce.paas.dbserver.com.br/login',
+    image: 'src/assets/images/dbcommerce.png',
   }
 ];

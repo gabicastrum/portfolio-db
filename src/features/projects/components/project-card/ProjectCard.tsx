@@ -1,8 +1,8 @@
 import './ProjectCard.css';
-import githubIcon from '@/assets/github.svg';
+import githubIcon from '@/assets/icons/github.svg';
 import { ImageWithFallback } from '@/shared/components/ImageWithFallback/ImageWithFallback';
 import type { ProjectCardProps } from '../../model/projects.types';
-import defaultImage from '@/assets/logo-db-cinza.png';
+import defaultImage from '@/assets/images/logo-db.png';
 
 
 export function ProjectCard({
@@ -55,15 +55,17 @@ export function ProjectCard({
             </a>
           )}
 
-          <a
-            href={githubUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-button project-button-secondary"
-          >
-            <img src={githubIcon} alt="GitHub" className="button-icon" />
-            GitHub
-          </a>
+          {githubUrl && (
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-button project-button-secondary"
+            >
+              <img src={githubIcon} alt="GitHub" className="button-icon" />
+              GitHub
+            </a>
+          )}
         </div>
       </div>
     </div>

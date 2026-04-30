@@ -1,7 +1,7 @@
-import curriculoPdf from '@/assets/CV-gabriela-de-castro-laurindo.pdf';
+import curriculoPdf from '@/assets/docs/CV-gabriela-de-castro-laurindo.pdf';
 
 export const detailsData = {
-  title: 'Currículo',
+  title: 'Meu Currículo',
   pdf: curriculoPdf,
   fileName: 'CV-gabriela-de-castro-laurindo.pdf',
 };

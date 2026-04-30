@@ -1,10 +1,10 @@
 import './Header.css'
 import { Link, useLocation } from 'react-router-dom'
 
-import githubIcon from '@/assets/github.svg'
-import linkedinIcon from '@/assets/linkedin.svg'
-import mailIcon from '@/assets/email.svg'
-import logo from '@/assets/logo-db.png'
+import githubIcon from '@/assets/icons/github.svg'
+import linkedinIcon from '@/assets/icons/linkedin.svg'
+import mailIcon from '@/assets/icons/email.svg'
+import logo from '@/assets/images/logo-db.png'
 import { CopyEmailButton } from '@/features/home/components/copy-email-button/CopyEmailButton'
 
 export const Header = () => {

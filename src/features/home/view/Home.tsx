@@ -14,7 +14,7 @@ export function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowHint(false);
-    }, 3000);
+    }, 2000);
   
     return () => clearTimeout(timer);
   }, []);
